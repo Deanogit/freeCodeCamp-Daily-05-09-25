@@ -4,3 +4,14 @@
 // It is between 0 and 255 inclusive.
 // It does not have leading zeros (e.g. 0 is allowed, 01 is not).
 // Only numeric characters are allowed.
+
+function isValidIPv4(ipv4) {
+  console.log(ipv4);
+  // between 0 - 255
+  // NO leading 0s (!01)
+  // only numeric
+  // regex
+  const regex = /[0-255+]\.[0-255+]\.[0-255+]\.[0-255+]/;
+  console.log(regex.test(ipv4));
+  return ipv4;
+}
